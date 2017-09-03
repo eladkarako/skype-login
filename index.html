@@ -1,0 +1,48 @@
+<!DOCTYPE html><html><head><title>Skype</title><meta charset="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><link rel="stylesheet" href="css/index.css?809cbff702961cb24049c44de46ee21" type="text/css"/><link rel="stylesheet" href="css/retina/index.css?c9f70c094c70a80fb727f841dc1dbf7b" type="text/css"/><script src="js/index.js?a0301b5760cfa0ab9dc3da6acf686b6e"></script></head><body><div class="view v2" id="loadingView" style="display:block"><span class="logo"><img src="images/normal/skype-logo-136x60.png" alt="Skype" class="skypeLogo"/></span></div><script>
+    /*
+     Due to race conditions, we must wait for the window.external API to be initialized.
+     Please see #AABIG-3214 for more details.
+     */
+    var CL_init = function() {
+        // Initialise login API
+        window.API = new SKYPE.login.Api();
+        API.log("Hello from ClientLogin bootstrap v." + Config.buildVersion + ", API initialized.");
+
+        // Initialise
+        window.HighContrast = new SKYPE.login.HighContrast();
+        window.Bootstrap = new SKYPE.login.Bootstrap(window.location);
+        window.EcsConfig = new SKYPE.login.ecs.Config();
+        EcsConfig.loadDefaultValues();
+
+        // Initialise ECS
+        window.EcsClient = new SKYPE.login.ecs.Client();
+
+        $(function () {
+            window.HighContrast.start();
+            window.Bootstrap.init();
+
+            $(document).on('ecsload', function () {
+                API.log("ECS Loaded successfully.");
+                var url = window.EcsConfig.getLoginUrl();
+                window.Bootstrap.load(url);
+            }).on('ecsfailed', function () {
+                API.log("ECS Client encountered an error.");
+                window.Bootstrap.onError();
+            });
+            window.EcsClient.init();
+        });
+
+    };
+
+    var CL_testLoad = function() {
+        try {
+            getExternal();
+            window.clearInterval(window.CL_loader);
+            CL_init();
+        } catch (e) {
+        }
+    };
+
+    window.CL_loader = window.setInterval(CL_testLoad, 100);
+    CL_testLoad(); // call tester immediately rather than waiting for the interval
+</script></body></html>

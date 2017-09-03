@@ -1,0 +1,70 @@
+.titleSmall{font-family:Arial,Helvetica,sans-serif}
+.titleLarge{font-family:Arial,Helvetica,sans-serif;line-height:20px}
+.paragraph{font-family:Tahoma,Arial,Helvetica,sans-serif}
+.paragraph a{font-family:Tahoma,Arial,Helvetica,sans-serif}
+.usernameLabel{font-family:Arial,Helvetica,sans-serif}
+.combobox input{font-family:Arial,Helvetica,sans-serif}
+.dropdown li{font-family:Arial,Helvetica,sans-serif}
+.dropdown li.selected{background-color:#06f}
+.passwordLabel{font-family:Arial,Helvetica,sans-serif}
+#password,#passwordSkype{margin-top:8px;font-size:10px}
+#problemsSigningIn,#problemsSigningInSkype{font-family:Tahoma,Arial,Helvetica,sans-serif}
+#liveLogin,#facebookLogin{font-family:Arial,Helvetica,sans-serif}
+#liveidHint{font-family:Tahoma,Arial,Helvetica,sans-serif}
+.messageBody,#messageBodyConflict{font-family:Arial,Helvetica,sans-serif}
+.checkbox{font-family:Tahoma,Arial,Helvetica,sans-serif}
+.button span{font-family:Arial,Helvetica,sans-serif;line-height:30px}
+#wrongAccountLink{font-family:Tahoma,Arial,Helvetica,sans-serif}
+.startAgainLink,.backLink{font-family:Arial,Helvetica,sans-serif}
+.suggestionName{font-family:Arial,Helvetica,sans-serif}
+.suggestionUsername{font-family:Tahoma,Arial,Helvetica,sans-serif}
+#partnerAccountName{font-family:Arial,Helvetica,sans-serif}
+#skypeAccountName{font-family:Arial,Helvetica,sans-serif}
+#conflictOptions{font-family:Tahoma,Arial,Helvetica,sans-serif}
+#liveidCSLink,#facebookCSLink{font-family:Tahoma,Arial,Helvetica,sans-serif}
+.capsLockBody{font-family:Arial,Helvetica,sans-serif}
+.highContrastWhite #defaultView,.highContrastWhite #skypeLoginView,.highContrastWhite #loadingView,.highContrastWhite #background{background:#fff}
+.highContrastWhite .blueRoundButton.darker .leftBookend{background:left top url(../../images/black-on-white/button-left-35x35.png) no-repeat;border-radius:0;border:0}
+.highContrastWhite .blueRoundButton.darker .rightBookend{background:right top url(../../images/black-on-white/button-right-35x35.png) no-repeat;border-radius:0}
+.highContrastWhite .blueRoundButton.darker{background:left top url(../../images/black-on-white/button-middle-35x35.png) repeat-x}
+.highContrastWhite .signInTitle,.highContrastWhite .learnMoreMSAHolder a,.highContrastWhite a#navigateToFBLogin{color:#000}
+.highContrastWhite .navigation li span span{font-weight:800}
+.highContrastWhite #defaultView .learnMoreMSAHolder{background:#fff url(../../images/black-on-white/msa-logos-135x25.png) center top no-repeat}
+.highContrastWhite #defaultView .navigation li.createSkypeAccount{background:#fff}
+.highContrastWhite #defaultView .navigation li.createSkypeAccount a{color:#000;font-weight:800;background:url(../../images/black-on-white/caret_right.png) center right no-repeat}
+.highContrastWhite #navigateToFBLogin{background-color:#fff}
+.highContrastWhite .v2 .message .messageBody{color:#000;background:url(../../images/black-on-white/exclamation_20x20.png) left top no-repeat}
+.highContrastWhite #skypeLoginView.v2 .dropdownButton{background-image:url(../../images/black-on-white/dropdown_32x32.png)}
+.highContrastWhite #skypeLoginView.v2 .inputFieldWrap,.highContrastWhite #skypeLoginView.v2 .combobox{background:#000;padding-right:3px}
+.highContrastWhite .combobox input{color:#000;background:#fff;font-weight:800}
+.highContrastWhite .dropdown li.selected{background:#000;color:#fff;font-weight:800}
+.highContrastWhite #skypeLoginView.v2 ::-webkit-input-placeholder{color:#fff}
+.highContrastWhite #skypeLoginView.v2 #password,.highContrastWhite #passwordSkype{color:#000;background:#fff;padding-right:7px}
+.highContrastWhite #problemsSigningIn{color:#000}
+.highContrastWhite #skypeLoginView.v2{font-weight:800}
+.highContrastWhite #skypeLoginView.v2 .signInDisabled{color:#fff}
+.highContrastWhite #skypeLoginView.v2 .backButton{background:url(../../images/black-on-white/back_20x20.png) top left no-repeat;color:#000}
+.highContrastWhite #skypeLoginView.v2 .checkbox{background:0;color:#000}
+.highContrastBlack a{color:#000}
+.highContrastBlack #defaultView,.highContrastBlack #skypeLoginView,.highContrastBlack #loadingView,.highContrastBlack #background{background:#000}
+.highContrastBlack .blueRoundButton.darker .leftBookend{background:left top url(../../images/white-on-black/button-left-35x35.png) no-repeat;border-radius:0;border:0}
+.highContrastBlack .blueRoundButton.darker .rightBookend{background:right top url(../../images/white-on-black/button-right-35x35.png) no-repeat;border-radius:0;border-width:0}
+.highContrastBlack .blueRoundButton.darker{background:left top url(../../images/white-on-black/button-middle-35x35.png) repeat-x}
+.highContrastBlack .signInTitle,.highContrastBlack .learnMoreMSAHolder a,.highContrastBlack a#navigateToFBLogin{color:white}
+.highContrastBlack .navigation li span span{font-weight:800}
+.highContrastBlack #defaultView .learnMoreMSAHolder{background:#000 url(../../images/white-on-black/msa-logos-135x25.png) center top no-repeat}
+.highContrastBlack #defaultView .navigation li.createSkypeAccount{background:#000}
+.highContrastBlack #defaultView .navigation li.createSkypeAccount a{color:white;font-weight:800;background:url(../../images/normal/caret_right.png) center right no-repeat}
+.highContrastBlack #navigateToFBLogin{background-color:#000}
+.highContrastBlack .v2 .message .messageBody{color:white;background:url(../../images/white-on-black/exclamation_20x20.png) left top no-repeat}
+.highContrastBlack #skypeLoginView.v2 .dropdownButton{background-image:url(../../images/white-on-black/dropdown_32x32.png);color:#000}
+.highContrastBlack #skypeLoginView.v2 .inputFieldWrap,.highContrastBlack #skypeLoginView.v2 .combobox{background:white;padding-right:3px}
+.highContrastBlack .combobox input{color:#000;font-weight:800}
+.highContrastBlack .dropdown li.selected{background:#000;color:white;font-weight:800}
+.highContrastBlack #skypeLoginView.v2 ::-webkit-input-placeholder{color:#000}
+.highContrastBlack #skypeLoginView.v2 #password{color:#000;padding-right:7px}
+.highContrastBlack #problemsSigningIn{color:white}
+.highContrastBlack #skypeLoginView.v2{font-weight:800}
+.highContrastBlack #skypeLoginView.v2 .signInDisabled{color:#000}
+.highContrastBlack #skypeLoginView.v2 .backButton{background:url(../../images/white-on-black/back_20x20.png) top left no-repeat;color:white}
+.highContrastBlack #skypeLoginView.v2 .checkbox{background:0;color:white}
